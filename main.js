@@ -90,6 +90,9 @@ function guessLetters(wordArray, guessArray) {
             console.log(hangmanCount(guessCount))
         }
     } while (guessesArray.includes('_') && guessCount > 0)
+    if (!guessesArray.includes('_')) {
+        console.log('You win!')
+    }
 }
 
 
